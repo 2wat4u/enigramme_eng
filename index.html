@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigramme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Enigramme</h1>
+        <nav>
+            <!-- Barre de navigation -->
+            <label for="niveau">Niveau :</label>
+            <select id="niveau">
+                <option value="tous">Tous</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="B1">B1</option>
+                <option value="B2">B2</option>
+                <option value="C1">C1</option>
+            </select>
+
+            <label for="groupe">Groupe :</label>
+            <select id="groupe">
+                <option value="tous">Tous</option>
+                <option value="able">able</option>
+                <option value="ai">ai</option>
+                <option value="all other">all other</option>
+                <option value="au">au</option>
+                <option value="aw">aw</option>
+                <option value="ay">ay</option>
+                <option value="ch">ch</option>
+                <option value="ck">ck</option>
+                <option value="dis">dis</option>
+                <option value="ea">ea</option>
+                <option value="ed">ed</option>
+                <option value="ee">ee</option>
+                <option value="ei">ei</option>
+                <option value="ful">ful</option>
+                <option value="ght">ght</option>
+                <option value="hood">hood</option>
+                <option value="ie">ie</option>
+                <option value="ing">ing</option>
+                <option value="ive">ive</option>
+                <option value="kn">kn</option>
+                <option value="mb">mb</option>
+                <option value="mis">mis</option>
+                <option value="mp">mp</option>
+                <option value="ng">ng</option>
+                <option value="oi">oi</option>
+                <option value="oo">oo</option>
+                <option value="ous">ous</option>
+                <option value="oy">oy</option>
+                <option value="ph">ph</option>
+                <option value="pre">pre</option>
+                <option value="qu">qu</option>
+                <option value="re">re</option>
+                <option value="sh">sh</option>
+                <option value="ship">ship</option>
+                <option value="sion">sion</option>
+                <option value="ss">ss</option>
+                <option value="th">th</option>
+                <option value="tion">tion</option>
+                <option value="tt">tt</option>
+                <option value="un">un</option>
+                <option value="w">w</option>
+                <option value="wh">wh</option>
+                <option value="wr">wr</option>
+                <option value="x">x</option>
+                <option value="y">y</option>
+                <option value="z">z</option>
+
+                <!-- Ajouter d'autres options de groupe -->
+            </select>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section pour la définition -->
+        <section id="definition-section" class="fixed-container">
+            <h2>Définition</h2>
+            <div id="definition" class="content-box"></div>
+        </section>
+
+        <!-- Section pour l'anagramme -->
+        <section id="anagramme-section" class="fixed-container">
+            <h2>Anagramme</h2>
+            <div id="anagramme" class="content-box"></div>
+        </section>
+
+        <!-- Section pour l'entrée utilisateur -->
+        <section id="input-section">
+            <h2>Entrez votre réponse</h2>
+            <div style="position: relative;">
+                <input type="text" id="guess" placeholder="Entrez votre réponse" />
+                <span class="icon" id="validation-icon"></span>
+            </div>
+            <div>
+                <button id="valider">Valider</button>
+                <button id="sauter">Passer</button>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <p>Enigramme - Un jeu pour enrichir votre vocabulaire</p>
+    </footer>
+
+    <!-- Modale pour afficher le message -->
+    <div id="modal" class="modal">
+        <div id="modal-message" class="modal-message"></div>
+    </div>
+
+
+    <script src="script_eng.js"></script>
+
+</body>
+
+</html>
