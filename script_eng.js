@@ -49,7 +49,7 @@ function lancerMot() {
             anagrammeElement.classList.remove('fade-in');
         }, 1000); // Durée de l'animation
     } else {
-        document.getElementById('definition').textContent = "Aucun mot trouvé pour ces critères.";
+        document.getElementById('definition').textContent = "No word found for these criteria.";
         document.getElementById('anagramme').textContent = "???";
         motActuel = "";
     }
